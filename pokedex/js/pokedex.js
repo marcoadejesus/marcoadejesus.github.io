@@ -61,7 +61,7 @@ const fetchPokeByName = (pokemon) => {
             return res.json();
         }else{
             resetScreen("No encontrado");
-            cambiarSrcImg("/imagenes/pikachu-sad.gif");
+            cambiarSrcImg("imagenes/pikachu-sad.gif");
         }
     }).then((data) => {
         getPokeData(data);
@@ -79,7 +79,7 @@ const fetchPokeAleatorio = () => {
             return res.json();
         }else{
             resetScreen("No encontrado");
-            cambiarSrcImg("/imagenes/pikachu-sad.gif");
+            cambiarSrcImg("imagenes/pikachu-sad.gif");
         }
     }).then((data) => {
         getPokeData(data);
