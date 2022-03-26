@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/poke__header.css">
+    <link rel="stylesheet" href="/css/poke__main.css">
+    <title>Pokedex</title>
+</head>
+<body>
+    <div class="poke__container">
+
+    <header class="poke__header">
+            <div class="poke__luz poke__luz--white">
+                <div class="poke__luz poke__luz--blue1">
+                    <div class="poke__luz poke__luz--blue2">
+                        <div class="poke__luz poke__luz--white2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="poke__luz poke__luz--red">
+                <div class="poke__luz poke__luz--red2">
+                    <div class="poke__luz poke__luz--red3"></div>
+                </div>
+            </div>
+
+            <div class="poke__luz poke__luz--yellow">
+                <div class="poke__luz poke__luz--yellow2">
+                    <div class="poke__luz poke__luz--yellow3"></div>
+                </div>
+            </div>
+
+            <div class="poke__luz poke__luz--yellow">
+                <div class="poke__luz poke__luz--yellow2">
+                    <div class="poke__luz poke__luz--yellow3"></div>
+                </div>
+            </div>
+    </header>
+
+    <main class="poke__main">
+
+        <section class="poke__screen">
+
+            <div class="screen" id="screen">
+                <div class="screen__header">
+                    
+                    <p class="data altura">
+                        <span>Altura</span>
+                        <span id="altura">?</span>
+                    </p>
+
+                    <p class="data peso">
+                        <span>Peso</span>
+                        <span id="peso">?</span>
+                    </p>
+
+                    <p class="data hp">
+                        <span>Vida</span>
+                        <span id="vida">?</span>
+                    </p>
+                </div>
+                <img src="/imagenes/pokeball.png" alt="pokeball" id="pokeImg">
+                <div class="info__pokemon">
+
+                    <h3 class="poke__name" id="poke_Name">???</h3>
+
+                    <div class="types" id="types">
+                    </div>
+                    
+                    <div class="info__stats">
+                        <div class="data">
+                            <h3 id="ataque">?</h3>
+                            <p>Ataque</p>
+                        </div>
+                        <div class="data">
+                            <h3 id="defensa">?</h3>
+                            <p>Defensa</p>
+                        </div>
+                        <div class="data">
+                            <h3 id="vel">?</h3>
+                            <p>Velocidad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="panel">
+            <div class="botones">
+                <button onclick="fetchPokeAleatorio()" class="boton-aleatorio">
+                    Ver Aleatorio
+                </button>
+            </div>
+            <div class="buscar">
+                <input type="text" placeholder="Nombre Pokemon" id="pokeName" name="pokeName"><br>
+                <button onclick="fetchPokeByName()">Ver Pokemon</button>
+            </div>
+        </section>
+
+    </main>
+
+</div>
+<script src="js/pokedex.js"></script>
+</body>
+</html>
